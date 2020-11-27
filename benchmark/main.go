@@ -31,19 +31,6 @@ type Social struct {
 	Twitter  string `json:"twitter"`
 }
 
-// Calculate returns x + 2.
-func Calculate(x int) (result int) {
-
-	if x < 2 {
-		return x
-	}
-	return Calculate(x-1) + Calculate(x-2)
-	/*
-		result = x * 300
-		return result
-	*/
-}
-
 func ReadJson() (result Users) {
 
 	byteValue, err := ioutil.ReadFile("users.json")
