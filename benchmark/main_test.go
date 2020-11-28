@@ -8,8 +8,32 @@ func BenchmarkReadJson(b *testing.B) {
 	}
 }
 
-func BenchmarkReadCsvFile(b *testing.B) {
+func BenchmarkReadJsonOne(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		ReadCsvFile()
+		ReadJsonOne()
+	}
+}
+
+func BenchmarkReadJsonBig(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		ReadJsonBig()
+	}
+}
+
+func BenchmarkReadCsvOne(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		ReadCsvOne()
+	}
+}
+
+func BenchmarkReadCsv(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		ReadCsv()
+	}
+}
+
+func BenchmarkReadCsvBig(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		ReadCsvBig()
 	}
 }
