@@ -20,6 +20,12 @@ func BenchmarkReadJsonBig(b *testing.B) {
 	}
 }
 
+func BenchmarkReadJsonBigProto(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		ReadJsonBigProto()
+	}
+}
+
 func BenchmarkReadCsvOne(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		ReadCsvOne()
