@@ -1,6 +1,6 @@
 /*
 
-www.calhoun.io
+www.calhoun.ioit add 
 The Go standard library follows a fairly strict backwards compatibility promise.
 As a developer this is a good thing, because it means the packages there won't randomly change and break your code, but it has downsides.
 The /x/ stands for external, and the packages inside it are still part of the Go project, but are external to the Go standard library. This allows the developers to follow a looser set of backwards compatbility guidelines on packages where the strict guidelines of the standard library don't make sense.
