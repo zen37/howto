@@ -1,0 +1,4 @@
+
+//format commit history, nice and short
+git log --pretty=oneline --abbrev-commit -[n]
+
