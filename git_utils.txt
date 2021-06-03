@@ -15,4 +15,7 @@ Remember that git is version control software on your local machine and GitHub i
 
 git push -u origin main
 
+//change the message of the most recent commit that has not been pushed to the remote repository
+git commit --amend -m "New commit message."
+
 ......
