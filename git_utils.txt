@@ -25,4 +25,9 @@ git reset --soft HEAD~1
 
 git reset --hard HEAD~1
 
+//steps from feature to main to latest repo version
+1. git checkout main
+2. git pull //get the latest version
+3. git checkout -b [new-branch]
+
 ......
