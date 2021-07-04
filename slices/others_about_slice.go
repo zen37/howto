@@ -41,7 +41,7 @@ func subslice4() {
 	fmt.Println("y:", y)
 }
 
-//take a slice from a slice does mot make a copy of the data,
+//take a slice from a slice does not make a copy of the data,
 // instead two variables are created that share memory
 func subslice2() {
 	x := []int{1, 2, 3, 4, 5}
