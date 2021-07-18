@@ -41,7 +41,8 @@ func main() {
 		fmt.Println(err)
 	}
 
-	csvFile, err := os.Create("samples/employees.csv")
+	//csvFile, err := os.Create("samples/employees.csv")
+	csvFile, err := os.OpenFile("samples/employees.csv", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0644)
 
 	if err != nil {
 		fmt.Println(err)
